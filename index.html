@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="c1.css">
+        <link rel="stylesheet" href="c2.css">
+        <link rel="stylesheet" href="style.css">
+
+
+        <title>HBD KIDO</title>
+    </head>
+    <body>
+       <div class="bday">
+          Happy Birthday
+       </div>
+       <div class="name">
+          Shivi
+       </div>
+       <div class="wrapper">
+             <div class="img-area">
+                 <div class="single-img img-one">
+                     <img src="aaa.jpg" alt="">     
+                 </div> 
+                 <div class="single-img img-two">
+                    <img src="bbb.jpg" alt="">     
+                </div> 
+                <div class="single-img img-three">
+                    <img src="ccc.jpg" alt="">     
+                </div> 
+                <div class="single-img img-four">
+                    <img src="aaa.jpg" alt="">     
+                </div>
+                <div class="single-img img-five">
+                    <img src="bbb.jpg" alt="">     
+                </div> 
+                <div class="single-img img-six">
+                    <img src="ccc.jpg" alt="">     
+                </div>  
+             </div>
+       </div>
+
+       <br><br><br>
+
+       <div id="card">
+          <div id="card-inside">
+            <div class="wrap">
+              <p>Dear you</p>
+              <p>“Yha likhunga abhi!</p>
+              <p>Yha bhi
+              </p>        
+              <center><h4>from</h4></center>
+              <p class="signed">Aman</p>
+              
+            </div>
+          </div>
+          <div id="card-front">
+            <div class="wrap">
+              <h1> Happy  Birthday !</h1>
+            </div>
+            <button id="open">&gt;</button>
+            <button id="close">&lt;</button>
+          </div>
+        </div>
+        <script>
+          (function() {
+        function $(id) {
+          return document.getElementById(id);
+        }
+
+        var card = $('card'),
+            openB = $('open'),
+            closeB = $('close'),
+            timer = null;
+        console.log('wat', card);
+        openB.addEventListener('click', function () {
+          card.setAttribute('class', 'open-half');
+          if (timer) clearTimeout(timer);
+          timer = setTimeout(function () {
+            card.setAttribute('class', 'open-fully');
+            timer = null;
+          }, 1000);
+        });
+
+        closeB.addEventListener('click', function () {
+          card.setAttribute('class', 'close-half');
+          if (timer) clearTimerout(timer);
+          timer = setTimeout(function () {
+            card.setAttribute('class', '');
+            timer = null;
+          }, 1000);
+        });
+
+      }());
+
+        </script>
+
+
+
+
+        <br><br>
+
+
+      <div id="card2">
+          <div id="card-inside2">
+            <div class="wrap">
+              <p>Dear you</p>
+              <p>“ Edhar likhunga abhi !</p>
+              <p>Yha bhi
+              </p>        
+              <center><h4>from</h4></center>
+              <p class="signed">Abhishek</p>
+              
+            </div>
+          </div>
+          <div id="card-front2">
+            <div class="wrap">
+              <h1> Happy  Birthday !</h1>
+            </div>
+            <button id="open2">&gt;</button>
+            <button id="close2">&lt;</button>
+          </div>
+        </div>
+        <script>
+          (function() {
+        function $(id) {
+          return document.getElementById(id);
+        }
+
+        var card = $('card2'),
+            openB = $('open2'),
+            closeB = $('close2'),
+            timer = null;
+        console.log('wat', card);
+        openB.addEventListener('click', function () {
+          card.setAttribute('class', 'open-half2');
+          if (timer) clearTimeout(timer);
+          timer = setTimeout(function () {
+            card.setAttribute('class', 'open-fully2');
+            timer = null;
+          }, 1000);
+        });
+
+        closeB.addEventListener('click', function () {
+          card.setAttribute('class', 'close-half2');
+          if (timer) clearTimerout(timer);
+          timer = setTimeout(function () {
+            card.setAttribute('class', '');
+            timer = null;
+          }, 1000);
+        });
+
+      }());
+
+        </script>
+
+
+
+
+
+
+
+        <div style="visibility: hidden;">
+        <embed src="bday.mp3" autostart="true" loop="true">
+        </div>
+        <div style="visibility: hidden;">
+        <embed src="bday.mp3" autostart="true" loop="true">
+        </div>
+
+       
+
+    </body>
+</html>
